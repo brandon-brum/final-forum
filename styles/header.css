@@ -1,0 +1,49 @@
+header {
+	height: 10vh;
+	background: linear-gradient(#C22, #F22, #C22);
+	display:flex;
+	align-items:center;
+	color:white;
+	
+}
+
+#desktopLogo {
+	display:none;
+	height: 60%;
+	filter: invert(100%) brightness(200%);
+	margin-right: 2%;
+	margin-left:2%;
+}
+
+#logo {
+	height: 60%;
+	margin-right: 2%;
+	margin-left:2%;
+}
+
+nav {
+	font-weight: bold;
+	display:table;
+	flex-grow:1;
+	text-align:center;
+	height:100%;
+}
+
+nav * {
+	vertical-align:middle;
+	border-right:1px inset #0002;
+	flex-grow:1;
+	height:100%;
+	vertical-align:center;
+	display:table-cell;
+}
+
+nav *:hover { background:linear-gradient(#0002, #0004); }
+
+nav *:first-child { border-left:1px inset #0002; }
+nav *:last-child { border-right:none; }
+
+@media screen and (min-width: 1100px) {
+	#desktopLogo { display:block; }
+	#logo { display:none; }
+}
