@@ -1,0 +1,78 @@
+#pattern {
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+	
+	background: linear-gradient(#FFF0, #FFFF);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#pattern::before {
+	content: "";
+	
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	
+	opacity:30%;
+	z-index: -1;
+	
+	background: url('../assets/backgrounds/tile.png');
+	background-size: 20px;
+	image-rendering: pixelated;
+	transform: skewX(20deg);
+}
+
+#text { 
+	display: none;
+	flex-grow: 1;
+	
+	text-align: center;
+	color:white;
+}
+
+#text h1 { font-weight: bold; font-size: 6vw; text-shadow: -1px -1px 10px #000; }
+#text span { background: #222; padding: 4px; }
+
+#login {
+	width: 90vw;
+	padding: 2.5vh 2.5vw 2.5vh 2.5vw;
+	margin: 2vw;
+	
+	border-radius: 2vw;
+	color: white;
+	background: linear-gradient(#C22, #F22, #C22);
+}
+
+#loginHeader {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#submit{
+	border: 4px solid white;
+	border-radius: 2vw;
+	
+	color: white;
+	background: none;
+}
+
+@media screen and (min-width: 1000px) {
+	#pattern { justify-content: flex-end; }
+	form * {
+		padding: 1em;
+		font-size: 0.8em;
+	}
+	#login {
+		width: 25vw;
+		color: white;
+	}
+	#text {
+		display: block;
+	}
+}

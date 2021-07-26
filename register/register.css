@@ -1,0 +1,21 @@
+main {
+	margin: 20px;
+}
+
+form {
+	font-size:0.5em;
+	width:50vw;
+}
+
+#register {
+	display:flex;
+	justify-content:center;
+}
+
+#submit{
+	border: 4px solid linear-gradient(#C22, #F22, #C22);
+	border-radius: 2vw;
+	
+	color: white;
+	background: linear-gradient(#C22, #F22, #C22);
+}
